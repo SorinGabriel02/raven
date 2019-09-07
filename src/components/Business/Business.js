@@ -1,4 +1,5 @@
 import React from "react";
+import "./Business.css";
 
 business = {
   imageSrc:
@@ -16,27 +17,29 @@ business = {
 class Business extends React.Component {
   render() {
     return (
-      <div class="Business">
-        <div class="image-container">
-          <img
-            src="https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg"
-            alt=""
-          />
+      <div className="Business">
+        <div className="image-container">
+          <img src={business.imageSrc} alt="" />
         </div>
-        <h2>MarginOtto Pizzeria</h2>
-        <div class="Business-information">
-          <div class="Business-address">
-            <p>1010 Paddington Way</p>
-            <p>Bordertown</p>
-            <p>NY 10101</p>
+        <h2>{business.name}</h2>
+        <div className="Business-information">
+          <div className="Business-address">
+            <p>{business.address}</p>
+            <p>{business.city}</p>
+            <p>
+              {business.state}
+              {business.zipCode}
+            </p>
           </div>
-          <div class="Business-reviews">
-            <h3>ITALIAN</h3>
-            <h3 class="rating">4.5 stars}</h3>
-            <p>90 reviews</p>
+          <div className="Business-reviews">
+            <h3>{business.category}</h3>
+            <h3 className="rating">{business.rating}</h3>
+            <p>{business.reviewCount}</p>
           </div>
         </div>
       </div>
     );
   }
 }
+
+export default Business;
