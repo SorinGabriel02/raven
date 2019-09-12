@@ -1,7 +1,7 @@
 import React from "react";
 import "./Business.css";
 
-class Business extends React.Component {
+export class Business extends React.Component {
   render() {
     const { business } = this.props;
     return (
@@ -29,5 +29,3 @@ class Business extends React.Component {
     );
   }
 }
-
-export default Business;
