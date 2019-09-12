@@ -4,3 +4,14 @@
   flex-wrap: wrap;
   margin: 4.4rem 10%;
 }
+.not-here {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  border: solid 1rem rgba(197, 155, 15, 0.774);
+  padding: 1%;
+}
