@@ -4,6 +4,8 @@ import BusinessList from "../BusinessList/BusinessList";
 import SearchBar from "../SearchBar/SearchBar";
 import Yelp from "../../util/Yelp";
 
+console.log(process.env.REACT_APP_WEATHER_API_KEY);
+
 class App extends React.Component {
   constructor(props) {
     super(props);
