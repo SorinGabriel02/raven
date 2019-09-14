@@ -7,12 +7,20 @@ class Business extends React.Component {
     return (
       <div className="Business">
         <div className="image-container">
-          <img src={business.imageSrc} alt="" />
+          <a href={business.url} target="_blank" rel="noopener noreferrer">
+            <img src={business.imageSrc} alt="" />{" "}
+          </a>
         </div>
         <h2>{business.name}</h2>
         <div className="Business-information">
           <div className="Business-address">
-            <p>{business.address}</p>
+            <a
+              href={`https://maps.google.com/maps?q=${business.latitude},${business.longitude}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {business.address}
+            </a>
             <p>{business.city}</p>
             <p>
               {business.state}

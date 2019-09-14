@@ -30,7 +30,20 @@ class SearchBar extends React.Component {
   }
 
   handleSortByChange(sortByOption) {
-    this.setState({ sortBy: sortByOption });
+    this.setState(
+      {
+        sortBy: sortByOption
+      },
+      () => {
+        if (this.state.location !== "") {
+          this.props.searchYelp(
+            this.state.term,
+            this.state.location,
+            this.state.sortBy
+          );
+        }
+      }
+    );
   }
 
   handleTermChange(event) {
@@ -80,7 +93,7 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className="SearchBar">
-        <div className="SearchBar-sort-options" onClick={this.handleSearch}>
+        <div className="SearchBar-sort-options">
           <ul>{this.renderSortByOptions()}</ul>
         </div>
         <div className="SearchBar-fields">
