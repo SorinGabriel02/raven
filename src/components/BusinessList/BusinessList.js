@@ -14,7 +14,9 @@ class BusinessList extends React.Component {
       );
     } else {
       return (
-        <h3 className="not-here">This location is not in our database.</h3>
+        <h3 className="not-here">
+          We have no suggestions for that location yet...
+        </h3>
       );
     }
   }
