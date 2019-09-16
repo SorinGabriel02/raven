@@ -2,7 +2,7 @@
   "name": "ravenous",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://SorinGabriel02/github.io/ravenous",
+  "homepage": "https://SorinGabriel02/github.io/ravenous/",
   "dependencies": {
     "dotenv": "^8.1.0",
     "gh-pages": "^2.1.1",
