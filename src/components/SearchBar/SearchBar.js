@@ -18,7 +18,7 @@ class SearchBar extends React.Component {
     this.sortByOptions = {
       "Best Match": "best_match",
       "Highest Rated": "rating",
-      "Most Reviewed": "review_count"
+      "Most Reviews": "review_count"
     };
   }
 
@@ -105,6 +105,8 @@ class SearchBar extends React.Component {
           <input
             type="text"
             placeholder="Where?"
+            autocomplete="on"
+            id="place"
             onChange={this.handleLocationChange}
             onKeyPress={this.handleKeyPress}
           />

@@ -5,7 +5,7 @@
   margin: 4.4rem 10%;
 }
 .not-here {
-  width: 96%;
+  width: auto;
   display: flex;
   font-family: Poppins, sans-serif;
   flex-wrap: wrap;
