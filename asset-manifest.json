@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/github.io/raven/static/css/main.759d6394.chunk.css",
+    "main.js": "/github.io/raven/static/js/main.852af3e0.chunk.js",
+    "main.js.map": "/github.io/raven/static/js/main.852af3e0.chunk.js.map",
+    "runtime~main.js": "/github.io/raven/static/js/runtime~main.b02c2938.js",
+    "runtime~main.js.map": "/github.io/raven/static/js/runtime~main.b02c2938.js.map",
+    "static/js/2.6f1a54a5.chunk.js": "/github.io/raven/static/js/2.6f1a54a5.chunk.js",
+    "static/js/2.6f1a54a5.chunk.js.map": "/github.io/raven/static/js/2.6f1a54a5.chunk.js.map",
+    "index.html": "/github.io/raven/index.html",
+    "precache-manifest.0f49b53e933ebee133483b4704c70b6e.js": "/github.io/raven/precache-manifest.0f49b53e933ebee133483b4704c70b6e.js",
+    "service-worker.js": "/github.io/raven/service-worker.js",
+    "static/css/main.759d6394.chunk.css.map": "/github.io/raven/static/css/main.759d6394.chunk.css.map",
+    "static/media/SearchBar.css": "/github.io/raven/static/media/background_search_mobile.5d0905e6.jpg"
+  }
+}
