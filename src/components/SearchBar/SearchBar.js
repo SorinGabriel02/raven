@@ -105,8 +105,6 @@ class SearchBar extends React.Component {
           <input
             type="text"
             placeholder="Where?"
-            autocomplete="on"
-            id="place"
             onChange={this.handleLocationChange}
             onKeyPress={this.handleKeyPress}
           />
