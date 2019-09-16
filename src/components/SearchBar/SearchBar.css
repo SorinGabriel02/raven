@@ -28,6 +28,7 @@
   font-weight: 600;
   font-size: 0.83rem;
   transition: color 0.25s;
+  flex-shrink: 3;
 }
 
 .SearchBar-sort-options li:hover {
