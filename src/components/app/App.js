@@ -8,15 +8,15 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      businesses: []
+      businesses: [],
     };
     this.searchYelp = this.searchYelp.bind(this);
   }
 
   searchYelp(term, location, sortBy) {
-    Yelp.search(term, location, sortBy).then(businesses => {
+    Yelp.search(term, location, sortBy).then((businesses) => {
       this.setState({
-        businesses: businesses
+        businesses: businesses,
       });
     });
   }
@@ -24,7 +24,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>ravenous</h1>
+        <h1>Get Out</h1>
         <SearchBar searchYelp={this.searchYelp} />
         <BusinessList businesses={this.state.businesses} />
       </div>

@@ -8,6 +8,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 25rem;
+  box-shadow: 0 0 4px orange;
 }
 
 .SearchBar-sort-options ul {
@@ -29,10 +30,12 @@
   font-size: 0.83rem;
   transition: color 0.25s;
   flex-shrink: 3;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding-top: 5px;
 }
 
 .SearchBar-sort-options li:hover {
-  color: #d4cfcf;
+  text-shadow: 0 0 2px orange;
 }
 
 .SearchBar-sort-options li.active,
@@ -59,6 +62,10 @@
   font-weight: 500;
 }
 
+.SearchBar-fields input:focus {
+  box-shadow: 0 0 10px orange;
+}
+
 .SearchBar-fields input:last-child {
   margin-right: 0;
 }
@@ -67,25 +74,22 @@
   text-align: center;
 }
 
-.SearchBar-submit a {
+.SearchBar-submit button {
   border-radius: 4px;
   padding: 0.72rem 1.7rem;
-  background-color: #cca353;
+  background-color: #e4b559;
   color: #ffffff;
   font-weight: 600;
   transition: background-color 0.5s;
+  border: none;
+  cursor: pointer;
 }
 
-.SearchBar-submit a:hover {
-  cursor: pointer;
-  background-color: #a7874b;
+.SearchBar-submit button:hover {
+  box-shadow: 0 0 10px orange;
 }
 
 @media only screen and (max-width: 560px) {
-  .SearchBar {
-    background-image: url("./background_search_mobile.jpg");
-  }
-
   .SearchBar-sort-options ul {
     flex-wrap: wrap;
     margin-left: 1rem;
